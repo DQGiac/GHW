@@ -1,0 +1,12 @@
+var toCipher = "Global Hack Week";
+var ciphered = "";
+var shift = 2;
+var alphabet = "abcdefghijklmnopqrstuvwxyz"
+for (let i = 0; i < toCipher.length; i ++) {
+	if (toCipher[i].toLowerCase() != toCipher[i]) {
+		ciphered += alphabet[alphabet.indexOf(toCipher[i].toLowerCase()) + shift].toUpperCase();
+	} else {
+		ciphered += alphabet[alphabet.indexOf(toCipher[i]) + shift];
+	}
+}
+console.log(ciphered);
